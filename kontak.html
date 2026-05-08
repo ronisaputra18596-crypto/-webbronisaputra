@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak Profesional</title>
+    <style>
+        /* Reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            max-width: 900px;
+            width: 100%;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .contact-section {
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            margin-bottom: 15px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .contact-section img {
+            width: 250px;
+            height: 250px;
+            object-fit: contain;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            border: 1.5px solid #ddd;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-section img:hover {
+            transform: scale(1.05);
+        }
+
+        .btn-contact {
+            display: inline-block;
+            background-color: #25d366; /* warna hijau WhatsApp */
+            color: white;
+            padding: 12px 25px;
+            font-weight: 600;
+            border-radius: 30px;
+            text-decoration: none;
+            box-shadow: 0 6px 12px rgb(37 211 102 / 0.6);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            font-size: 16px;
+        }
+
+        .btn-contact:hover {
+            background-color: #128c4a;
+            box-shadow: 0 8px 20px rgb(18 140 74 / 0.8);
+        }
+
+        .btn-ig {
+            background-color: #e1306c; /* warna Instagram */
+            box-shadow: 0 6px 12px rgba(225, 48, 108, 0.6);
+        }
+
+        .btn-ig:hover {
+            background-color: #b92a59;
+            box-shadow: 0 8px 20px rgba(185, 42, 89, 0.8);
+        }
+
+        /* Responsive lebih lanjut untuk mobile */
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-section img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- WhatsApp Section -->
+        <section class="contact-section">
+            <h2>WhatsApp</h2>
+            <img src="roni.watshap22.jpeg" alt="QR Code WhatsAp Roni Saputra" />
+            <p><strong>Nomor:</strong> 0831-8040-4684</p>
+            <a href="https://wa.me/6283180404684" target="_blank" rel="noopener noreferrer" class="btn-contact">
+                Hubungi via WhatsApp
+            </a>
+        </section>
+
+        <!-- Instagram Section -->
+        <section class="contact-section">
+            <h2>Instagram</h2>
+            <img src="roni.ig22.jpeg" alt="QR Code Instagram roni saputra" />
+            <p><strong>Username:</strong> @roni_s_22.06</p>
+            <a href="https://www.instagram.com/roni_s_22.06?igsh=dWo5eDduOXg3Mmpm" target="_blank" rel="noopener noreferrer" class="btn-contact btn-ig">
+                Kunjungi Instagram
+            </a>
+        </section>
+    </div>
+     <a href="index.html" class="btn-animated" title="Kembali ke menu utama">Kembali ke menu</a>
+    </div>
+</body>
+</html>

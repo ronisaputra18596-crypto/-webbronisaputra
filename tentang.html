@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ProfiL Roni Saputra</title>
+<style>
+  /* Reset margin & padding */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Ganti background sesuai gambar kamu */
+    background: url("jas\ .jpeg") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Kontainer glassmorphism modern */
+  .container {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 40px 35px;
+    width: 360px;
+    max-width: 90vw;
+    color: #28808b;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-bottom: 28px;
+    color: #236556; /* Muda terang agar kontras */
+    text-align: center;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  p strong {
+    color: #80deea;
+    font-weight: 600;
+  }
+  a {
+    color: #2b726b;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  a:hover {
+    color: #469683;
+  }
+  /* Tombol oval glass */
+  button {
+    margin-top: 30px;
+    width: 100%;
+    padding: 14px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #a7ffeb;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid #1e5a62;
+    border-radius: 9999px;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    letter-spacing: 0.05em;
+  }
+  button:hover {
+    background-color: #26605a;
+    color: #00332a;
+    box-shadow: 0 0 12px #29615baa;
+  }
+  /* Responsive di layar kecil */
+  @media (max-width: 400px) {
+    .container {
+      padding: 30px 20px;
+    }
+    h1 {
+      font-size: 1.9rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Roni Saputra</h1>
+  <p><strong>Jenis Kelamin:</strong> Laki-Laki</p>
+  <p><strong>Tempat & Tgl Lahir:</strong> Ladang Gampo, 22 February 2006</p>
+  <p><strong>Agama:</strong> Islam</p>
+  <p><strong>Jurusan / Prodi:</strong> D3 Manajemen Informatika</p>
+  <p><strong>Alamat Sekarang:</strong> Bukik batabuah</p>
+  <p><strong>Email:</strong> <a href="ronisaputra18596@gmail.com">ronisaputra18596@gmail.com</a></p>
+  <button onclick="location.href='index.html'">Back ke menu</button>
+</div>
+
+</body>
+</html>
